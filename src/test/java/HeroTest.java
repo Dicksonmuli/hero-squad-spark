@@ -33,11 +33,17 @@ public class HeroTest {
 	public void getWeakness_returnsAbility_CannotRun() {
 		assertEquals("cannot run", testHero.getWeakness());
 	}
-//find returns the hero with the give id
+//contains all the instances
 	public void all_returnsAllInstancesOfHero_true() {
 		Hero anotherHero =  new Hero("Commando", 35, "Fighter, use machinegun", "getting old");
 		assertTrue(Hero.all().contains(testHero));
 		assertTrue(Hero.all().contains(anotherHero));
 	}
+//find method returns the hero with the give id
+@Test
+public void find_returnsHeroWithSameId_AnotherHero(){
+	Hero anotherHero = new Hero("NinjaMan",  31, "Strength, speed", "cannot run");
+	assertEquals(anotherHero, Hero.find(anotherHero.getId()));
+}
 
 }
