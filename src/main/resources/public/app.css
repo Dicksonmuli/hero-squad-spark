@@ -1,7 +1,9 @@
 ul{
 	list-style-type: none;
 }
-
+body{
+	background-color: #D9E0E0;
+}
 .tiles-heading,
 .tiles-body,
 .tiles-footer {
