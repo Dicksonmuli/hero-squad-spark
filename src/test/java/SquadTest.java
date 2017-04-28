@@ -42,19 +42,17 @@ public class SquadTest {
     assertEquals(true, Squad.all().contains(testSquadTwo));
   }
 
-  // @Test
-  // public void clear_emptiesAllSquadsFromList_0() {
-  //   Squad testSquad = new Squad("Avengers");
-  //   Squad.clear();
-  //   assertEquals(Squad.all().size(), 0);
-  // }
-	//
-  // @Test
-  // public void getId_squadInstantiatesWithAnId_1() {
-  //   Squad testSquad = new Squad("Avengers");
-  //   assertEquals(1, testSquad.getId());
-  // }
-	//
+  @Test
+  public void clear_emptiesAllSquadsFromList_0() {
+    Squad.clear();
+    assertEquals(Squad.all().size(), 0);
+  }
+// the first squad instantiates with id 1
+  @Test
+  public void getId_squadInstantiatesWithAnId_1() {
+    assertEquals(1, testSquad.getId());
+  }
+
   // @Test
   // public void find_returnsSquadWithSameId_testSquadTwo() {
   //   Squad testSquadOne = new Squad("Avengers");
