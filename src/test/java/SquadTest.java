@@ -35,14 +35,13 @@ public class SquadTest {
 		assertEquals("computer illiteracy", testSquad.getReason());
 	}
 //all instances
-  // @Test
-  // public void all_returnsAllInstancesOfSquad_true() {
-  //   Squad testSquadOne = new Squad("Avengers");
-  //   Squad testSquadTwo = new Squad("X-men");
-  //   assertEquals(true, Squad.all().contains(testSquadOne));
-  //   assertEquals(true, Squad.all().contains(testSquadTwo));
-  // }
-	//
+  @Test
+  public void all_returnsAllInstancesOfSquad_true() {
+    Squad testSquadTwo = new Squad("X-men", 5, "computer illiteracy");
+    assertEquals(true, Squad.all().contains(testSquad));
+    assertEquals(true, Squad.all().contains(testSquadTwo));
+  }
+
   // @Test
   // public void clear_emptiesAllSquadsFromList_0() {
   //   Squad testSquad = new Squad("Avengers");
