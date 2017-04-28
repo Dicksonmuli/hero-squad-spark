@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>To Do List</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  <link href='/app.css' rel='stylesheet/css'>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="page-heading">
+          <h1>Heroes Squads</h1>
+          <div class="options">
+            <div class="btn-toolbar">
+              <a href="#" class="btn btn-default"><i class="fa fa-fw fa-cog"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <a class="info-tiles tiles-inverse has-footer" href="#">
+            <div class="tiles-heading">
+              <div class="pull-left">Squads</div>
+              <div class="pull-right">
+                <div id="tileorders" class="sparkline-block"><canvas width="39" height="13" style="display: inline-block; width: 39px; height: 13px; vertical-align: top;"></canvas></div>
+              </div>
+            </div>
+            <div class="tiles-body">
+              <div class="text-center">All Squads</div>
+            </div>
+
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="info-tiles tiles-green has-footer" href="#">
+            <div class="tiles-heading">
+              <div class="pull-left">More</div>
+              <div class="pull-right">
+                <div id="tilerevenues" class="sparkline-block"><canvas width="40" height="13" style="display: inline-block; width: 40px; height: 13px; vertical-align: top;"></canvas></div>
+              </div>
+            </div>
+            <div class="tiles-body">
+              <div class="text-center">Add Squad</div>
+            </div>
+
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="info-tiles tiles-blue has-footer" href="#">
+            <div class="tiles-heading">
+              <div class="pull-left">Views</div>
+              <div class="pull-right">
+                <div id="tiletickets" class="sparkline-block"><canvas width="13" height="13" style="display: inline-block; width: 13px; height: 13px; vertical-align: top;"></canvas></div>
+              </div>
+            </div>
+            <div class="tiles-body">
+              <div class="text-center">Cool Stuff</div>
+            </div>
+
+          </a>
+        </div>
+
+        <div class="col-md-3">
+          <a class="info-tiles tiles-midnightblue has-footer" href="#">
+            <div class="tiles-heading">
+              <div class="pull-left">Filter</div>
+              <div class="pull-right">
+                <div id="tilemembers" class="sparkline-block"><canvas width="39" height="13" style="display: inline-block; width: 39px; height: 13px; vertical-align: top;"></canvas></div>
+              </div>
+            </div>
+            <div class="tiles-body">
+              <div class="text-center">Search</div>
+            </div>
+
+          </a>
+        </div>
+      </div>
+
+      <div>
+        #parse( $template)
+      </div>
+</body>
+
+</html>

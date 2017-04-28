@@ -14,26 +14,32 @@ public class HeroTest {
 		Hero.clear();
 	}
 //instantiates correctly
+	@Test
 	public void Hero_instantiatesCorrectly_true() {
 		assertTrue(testHero instanceof Hero);
 	}
 //getName returns hero's name
+	@Test
 	public void getName_returnsName_NinjaMan() {
 		assertEquals("NinjaMan", testHero.getName());
 	}
 //getAge returns hero's  age
+	@Test
 	public void getAge_returnsAge_30 () {
 		assertEquals(30, testHero.getAge());
 	}
 //getAbility returns hero's  ability
+	@Test
 	public void getAbility_returnsAbility_Strength() {
 		assertEquals("Strength, speed", testHero.getAbility());
 	}
 //getWeakness returns hero's weakness
+	@Test
 	public void getWeakness_returnsAbility_CannotRun() {
 		assertEquals("cannot run", testHero.getWeakness());
 	}
 //contains all the instances
+	@Test
 	public void all_returnsAllInstancesOfHero_true() {
 		Hero anotherHero =  new Hero("Commando", 35, "Fighter, use machinegun", "getting old");
 		assertTrue(Hero.all().contains(testHero));
