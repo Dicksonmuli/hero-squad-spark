@@ -63,13 +63,12 @@ public class SquadTest {
   public void getHeroes_initiallyReturnsEmptyList_ArrayList() {
     assertEquals(0, testSquad.getHeroes().size());
   }
-
-  // @Test
-  // public void addHeroes_addHeroToList_true(){
-  //   Squad.clear();
-  //   Hero testHero = new Hero("Superman", "Strength, Flight, Laser Eyes", "DC");
-  //   Squad testSquad = new Squad("Avengers");
-  //   testSquad.addHero(testHero);
-  //   assertTrue(testSquad.getHeroes().contains(testHero));
-  // }
+//adds heros to a squad
+  @Test
+  public void addHeroes_addHeroToList_true(){
+    Squad.clear();
+    Hero testHero = new Hero("NinjaMan",  30, "Strength, speed", "cannot run");
+    testSquad.addHero(testHero);
+    assertTrue(testSquad.getHeroes().contains(testHero));
+  }
 }
