@@ -8,11 +8,11 @@ public class HeroTest {
 	public void instanciate() {
 		testHero = new Hero("NinjaMan",  30, "Strength, speed", "cannot run");
 	}
-//executes after every test
-	// @After
-	// public void tearDown() {
-	// 	Hero.clear();
-	// }
+//executes after every test (clears instances)
+	@After
+	public void tearDown() {
+		Hero.clear();
+	}
 //instantiates correctly
 	public void Hero_instantiatesCorrectly_true() {
 		assertTrue(testHero instanceof Hero);
@@ -32,6 +32,12 @@ public class HeroTest {
 //getWeakness returns hero's weakness
 	public void getWeakness_returnsAbility_CannotRun() {
 		assertEquals("cannot run", testHero.getWeakness());
+	}
+//find returns the hero with the give id
+	public void all_returnsAllInstancesOfHero_true() {
+		Hero anotherHero =  new Hero("Commando", 35, "Fighter, use machinegun", "getting old");
+		assertTrue(Hero.all().contains(testHero));
+		assertTrue(Hero.all().contains(anotherHero));
 	}
 
 }
