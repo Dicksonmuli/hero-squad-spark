@@ -1,14 +1,14 @@
 <div class="header">
 	<h1>$squad.getName():</h1>
 <div>
-<p>slogan:$squad.getReason <br>Maximum size:$squad.getMaximumSize();
+<p>slogan:$squad.getReason() <br>Maximum size:$squad.getMaximumSize();
 <ul>
 	#foreach($hero in $squad.getHeroes())
 		<li>
-			<h3>$hero.getName()</h3>
-			<h3>$hero.getAge()</h3>
-			<h3>$hero.getAbility()</h3>
-			<h3>$hero.getWeakness()</h3
+			<h5>$hero.getName()</h5>
+			<h5>$hero.getAge()</h5>
+			<h5>$hero.getAbility()</h5>
+			<h5>$hero.getWeakness()</h5>
 		</li>
 	#end
 </ul>

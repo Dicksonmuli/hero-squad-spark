@@ -58,10 +58,7 @@ public static Squad find(int id) {
 	}
 // adds heroes to a Squad
 	public void addHero(Hero hero) {
-		for(int i =1; i < getMaximumSize(); i++) {
 			mHeros.add(hero);
-		}
-			System.out.println("The maximum size reached!");
 
 	}
 

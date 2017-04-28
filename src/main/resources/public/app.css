@@ -1,3 +1,7 @@
+ul{
+	list-style-type: none;
+}
+
 .tiles-heading,
 .tiles-body,
 .tiles-footer {

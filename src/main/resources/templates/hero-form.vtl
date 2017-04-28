@@ -1,0 +1,23 @@
+<div class="header">
+	<h2>Add a hero</h1>
+</div>
+
+<div class="input-form">
+	<form action="/heroes" method="post">
+		<input id="squadId" name="squadId" type="hidden" value="$squad.getId()">
+
+		<label for="name">Name</label>
+		<input id="name" name="name" type="text" class="form-control">
+
+		<label for="age">Age</label>
+		<input id="age" name="age" type="text" class="form-control">
+
+		<label for="strength">Strength</label>
+		<input id="strength" name="strength" type="text" class="form-control">
+
+		<label for="weakness">Weakness</label>
+		<input id="weakness" name="weakness" type="text" class="form-control">
+
+		<button type="submit" class="btn btn-success"> Add Hero</button>
+	</form>
+</div>
