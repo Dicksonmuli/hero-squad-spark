@@ -39,6 +39,16 @@ public class HeroTest {
 		assertTrue(Hero.all().contains(testHero));
 		assertTrue(Hero.all().contains(anotherHero));
 	}
+	@Test
+	public void clear_emptiesAllHerosFromList_0() {
+		Hero.clear();
+		assertEquals(0, Hero.all().size());
+	}
+//return instance with an id
+	@Test
+	public void getId_returnsInstantiateWithAnId_1(){
+		assertEquals(1, testHero.getId());
+	}
 //find method returns the hero with the give id
 @Test
 public void find_returnsHeroWithSameId_AnotherHero(){
