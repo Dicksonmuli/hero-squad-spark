@@ -53,7 +53,7 @@ public static Squad find(int id) {
 	}
 }
 //returns heroes found in a certain Squad
-	public List<Hero> getHeros() {
+	public List<Hero> getHeroes() {
 		return mHeros;
 	}
 // adds heroes to a Squad

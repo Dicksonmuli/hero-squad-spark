@@ -52,20 +52,18 @@ public class SquadTest {
   public void getId_squadInstantiatesWithAnId_1() {
     assertEquals(1, testSquad.getId());
   }
+//finds a squad with a certain id
+  @Test
+  public void find_returnsSquadWithSameId_testSquadTwo() {
+		Squad testSquadTwo = new Squad("X-men", 5, "computer illiteracy");
+    assertEquals(Squad.find(testSquadTwo.getId()), testSquadTwo);
+  }
+//heroes list is empty innitally
+  @Test
+  public void getHeroes_initiallyReturnsEmptyList_ArrayList() {
+    assertEquals(0, testSquad.getHeroes().size());
+  }
 
-  // @Test
-  // public void find_returnsSquadWithSameId_testSquadTwo() {
-  //   Squad testSquadOne = new Squad("Avengers");
-  //   Squad testSquadTwo = new Squad("X-men");
-  //   assertEquals(Squad.find(testSquadTwo.getId()), testSquadTwo);
-  // }
-	//
-  // @Test
-  // public void getHeroes_initiallyReturnsEmptyList_ArrayList() {
-  //   Squad testSquad = new Squad("Avengers");
-  //   assertEquals(0, testSquad.getHeroes().size());
-  // }
-	//
   // @Test
   // public void addHeroes_addHeroToList_true(){
   //   Squad.clear();
